@@ -24,3 +24,5 @@ jobs:
       run: dotnet restore --use-lock-file
     - name: Build
       run: dotnet build --no-restore
+    - name: Component detection
+      uses: advanced-security/component-detection-dependency-submission-action@v0.1.0
